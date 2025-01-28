@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Subscriptions Manager - Prezentare</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .slide {
+            display: none;
+            padding: 40px;
+            height: 100vh;
+            box-sizing: border-box;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: row;
+            gap: 40px;
+        }
+        .slide.active {
+            display: flex;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .content {
+            flex: 1;
+            max-width: 45%;
+            padding: 20px;
+            text-align: left;
+        }
+        .content h1, .content h2 {
+            margin: 0 0 20px;
+        }
+        .content h1 {
+            font-size: 2.4em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content p, .content ul {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(255, 0, 128, 0.2);
+            border: 1px solid #ff0080;
+            border-radius: 5px;
+        }
+        img {
+            flex: 1;
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .buttons {
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+        }
+        .button {
+            display: inline-block;
+            padding: 20px 40px;
+            margin: 20px;
+            background-color: #ff0080;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.3em;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #e60073;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide-1">
+        <div class="content">
+            <h1>Smart Subscriptions Manager</h1>
+            <h2>„Un pas înainte în gestionarea abonamentelor personale”</h2>
+            <p>Descoperă o soluție inovatoare pentru organizarea abonamentelor personale.</p>
+        </div>
+        <img src="./Screenshot 2025-01-28 165628.png" alt="Introducere">
+        <div class="buttons">
+            <button class="button" onclick="nextSlide()">Înainte</button>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide-2">
+        <div class="content">
+            <h2>„Simplificăm viața prin tehnologie”</h2>
+            <p>Smart Subscriptions Manager este o platformă centralizată, creată pentru utilizatori care doresc să-și controleze finanțele cu un minim de efort.</p>
+        </div>
+        <img src="./Screenshot 2025-01-28 174211.png" alt="Dashboard">
+        <div class="buttons">
+            <button class="button" onclick="prevSlide()">Înapoi</button>
+            <button class="button" onclick="nextSlide()">Înainte</button>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide-3">
+        <div class="content">
+            <h2>Funcționalități Cheie</h2>
+            <ul>
+                <li>Gestionare completă a abonamentelor.</li>
+                <li>Vizualizare interactivă: grafice tip bar chart și pie chart.</li>
+                <li>Notificări pentru plățile viitoare.</li>
+                <li>Căutare rapidă.</li>
+                <li>Interfață modernă și responsive.</li>
+            </ul>
+        </div>
+        <img src="./Screenshot 2025-01-28 174228.png" alt="Funcționalități">
+        <div class="buttons">
+            <button class="button" onclick="prevSlide()">Înapoi</button>
+            <button class="button" onclick="nextSlide()">Înainte</button>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" id="slide-4">
+        <div class="content">
+            <h2>Exemplu Dashboard</h2>
+            <p>Dashboard-ul include grafice, lista abonamentelor active și notificări.</p>
+        </div>
+        <img src="./Screenshot 2025-01-28 174247.png" alt="Dashboard">
+        <div class="buttons">
+            <button class="button" onclick="prevSlide()">Înapoi</button>
+            <button class="button" onclick="nextSlide()">Înainte</button>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" id="slide-5">
+        <div class="content">
+            <h2>Beneficii</h2>
+            <ul>
+                <li>Control total asupra abonamentelor.</li>
+                <li>Economisire de bani prin analiza cheltuielilor.</li>
+                <li>Scalabilitate pentru utilizatori moderni.</li>
+            </ul>
+        </div>
+        <img src="./Screenshot 2025-01-28 174228.png" alt="Beneficii">
+        <div class="buttons">
+            <button class="button" onclick="prevSlide()">Înapoi</button>
+            <button class="button" onclick="nextSlide()">Înainte</button>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide" id="slide-6">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Email: contact@smartsubscriptionsmanager.com</p>
+            <p>Telefon: +40 123 456 789</p>
+            <p>Website: <a href="file:///D:/vscode/SmartSubscriptionsManager/index2.html" class="button">Deschide Dashboard</a></p>
+        </div>
+        <img src="./Screenshot 2025-01-28 174247.png" alt="Contact">
+        <div class="buttons">
+            <button class="button" onclick="prevSlide()">Înapoi</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function nextSlide() {
+            document.getElementById(`slide-${currentSlide}`).classList.remove('active');
+            currentSlide = currentSlide + 1 > totalSlides ? 1 : currentSlide + 1;
+            document.getElementById(`slide-${currentSlide}`).classList.add('active');
+        }
+
+        function prevSlide() {
+            document.getElementById(`slide-${currentSlide}`).classList.remove('active');
+            currentSlide = currentSlide - 1 < 1 ? totalSlides : currentSlide - 1;
+            document.getElementById(`slide-${currentSlide}`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
